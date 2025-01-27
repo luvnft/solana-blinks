@@ -165,7 +165,7 @@ export async function POST(req: Request) {
       createdAt: new Date()
     });
     console.log(result.insertedId);
-    const blinkLink = `https://www.getblink.fun/api/actions/tokens/${result.insertedId}`;
+    const blinkLink = `https://blink.luvnft.com/api/actions/tokens/${result.insertedId}`;
     return NextResponse.json({ blinkLink });
   } catch (error) {
     console.log('Error generating blink:', error);

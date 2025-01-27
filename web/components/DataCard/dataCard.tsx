@@ -11,7 +11,7 @@ interface DataProps {
 
 const DataCard: React.FC<DataProps> = ({ base, code, title, endpoint }) => {
     const [copied, setCopied] = useState(false);
-    const blinkLink = `https://www.getblink.fun/api/actions/${endpoint}/${code}`;
+    const blinkLink = `https://blink.luvnft.com/api/actions/${endpoint}/${code}`;
 
     const handleCopy = () => {
       navigator.clipboard.writeText(`${base}${blinkLink}`);

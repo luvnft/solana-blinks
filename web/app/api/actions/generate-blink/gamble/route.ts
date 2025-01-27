@@ -20,7 +20,7 @@ export async function POST(req: Request) {
       createdAt: new Date()
     });
 
-    const blinkLink = `https://getblink.fun/api/actions/gamble/${result.insertedId}`;
+    const blinkLink = `https://blink.luvnft.com/api/actions/gamble/${result.insertedId}`;
     console.log("---------------------Blink Link---------------------");
     console.log(blinkLink);
     console.log("----------------------------------------------------");
